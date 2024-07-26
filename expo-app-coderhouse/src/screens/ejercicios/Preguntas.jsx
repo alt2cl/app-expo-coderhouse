@@ -3,14 +3,16 @@ import React, { useState } from 'react'
 import QuestionsBox from '@/components/QuestionsBox'
 import ButtonPrimary from '@/components/ButtonPrimary'
 import { SimpleLineIcons } from '@expo/vector-icons';
-
-
+import { setResultado } from '@/features/ResultadoSlice'
 
 
 const Preguntas = ({ navigation, route }) => {
-    console.log('route params', route.params.nodoLevel)
 
     const nodoLevel = route.params.nodoLevel
+    const questionCount = nodoLevel.questions.length
+
+
+    console.log('questionCount: ', questionCount)
 
     return (
         <ScrollView style={{ flex: 1 }}>
@@ -18,7 +20,7 @@ const Preguntas = ({ navigation, route }) => {
                 {
                     nodoLevel.questions.map((item, index) => {
                         return (
-                            <QuestionsBox item={item} key={'question-' + index} />
+                            <QuestionsBox item={item} key={'question-' + index} countQuestions={questionCount} />
                         )
                     })
                 }

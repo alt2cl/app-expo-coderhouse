@@ -1,14 +1,43 @@
 import { StyleSheet, Text, View, FlatList } from 'react-native'
 import ButtonOutline from './ButtonOutline'
 import React, { useState } from 'react'
-const QuestionsBox = ({ item, action }) => {
-    const [selectedOption, setselectedOption] = useState(null)
+import { useDispatch } from 'react-redux'
 
-    const handleSelectedOption = (title) => {
-        console.log('click')
-        setselectedOption(title)
+import { setPercent } from '@/features/ResultadoSlice'
+
+
+
+
+const QuestionsBox = ({ item, action, countQuestions }) => {
+    const [selectedOption, setSelectedOption] = useState(null)
+    const dispatch = useDispatch()
+
+    const correctAnswer = item.correct_answer
+
+    console.log('correctAnswer:', correctAnswer)
+
+    const handleSelectedOption = (item) => {
+        console.log('click id:', item.id)
+        setSelectedOption(item.id)
+
+        if (item.id == correctAnswer) {
+            console.log('respuesta correcta', correctAnswer)
+            const valueperitem = 100 / countQuestions
+
+            dispatch(
+                setPercent({
+                    comprehension: valueperitem,
+                })
+            )
+        }
 
     }
+
+
+
+
+
+
     return (
 
         <View className="p-5 bg-white mb-5 rounded-md shadow-lg shadow-slate-600">
@@ -18,18 +47,17 @@ const QuestionsBox = ({ item, action }) => {
             {item.options.map((item) => {
                 return (
 
-                    <ButtonOutline key={item.id} title={item.title} className="mb-2" action={() => handleSelectedOption(item.title)} isSelected={item.title == selectedOption} />
+                    <ButtonOutline
+                        key={item.id}
+                        title={item.title}
+                        className="mb-2"
+                        action={() => handleSelectedOption(item)}
+                        isSelected={item.id == selectedOption}
+                    />
 
                 )
             })}
-            {/* <FlatList
-                data={item.options}
-                renderItem={({ item }) => {
-                    return (
-                        <ButtonOutline title={item.title} className="mb-2" action={() => handleSelectedOption(item.title)} isSelected={item.title == selectedOption} />
-                    )
-                }}
-            /> */}
+
         </View>
 
     )

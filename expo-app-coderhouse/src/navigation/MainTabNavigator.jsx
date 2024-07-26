@@ -43,6 +43,7 @@ export default MainTabNavigator
 const styles = StyleSheet.create({
   tabBar: {
     paddingBottom: 30,
+    paddingTop: 10,
     height: 85
   }
 })

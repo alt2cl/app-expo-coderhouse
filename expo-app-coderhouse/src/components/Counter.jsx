@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useState, useEffect } from 'react'
 
-const Counter = ({ stop }) => {
+const Counter = ({ stop, onStop }) => {
 
     const [cen, setCen] = useState(0);
     const [seg, setSeg] = useState(0);
@@ -33,6 +33,12 @@ const Counter = ({ stop }) => {
                     return prevCen + 1;
                 });
             }, 10);
+        } else {
+            // Llama a onStop con el tiempo formateado
+            if (onStop) {
+                console.log('el onstop')
+                onStop(`${formatNumber(hrs)}:${formatNumber(min)}:${formatNumber(seg)}:${formatNumber(cen)}`);
+            }
         }
 
         return () => clearInterval(interval);
