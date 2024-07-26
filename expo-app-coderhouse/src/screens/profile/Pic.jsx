@@ -1,14 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function Home({ navigation }) {
-    const goNav = (target) => {
-        navigation.navigate(target)
-    }
+export default function Pic() {
     return (
         <View style={styles.container}>
-            <Text>Home</Text>
-
+            <Text>Change pic</Text>
         </View>
     )
 }

@@ -1,0 +1,466 @@
+{
+    "lecturas": {
+      "infante": [
+        {
+          "id": "1",
+          "title": "El día en el parque",
+          "history": "El sol brillaba en el cielo azul mientras los pajaritos cantaban alegremente. María y su perro Max salieron a dar un paseo por el parque. Caminaron por el sendero, saltaron charcos y observaron las flores de colores. De repente, escucharon un ruido en los arbustos. ¿Qué podrá ser?",
+          "words": 46,
+          "questions": [
+            {
+              "id": "question-01",
+              "title": "¿Cómo estaba el cielo cuando María y Max salieron?",
+              "options": [
+                { "id": "opt-01", "title": "Nublado." },
+                { "id": "opt-02", "title": "Azul y soleado." },
+                { "id": "opt-03", "title": "Lluvioso." },
+                { "id": "opt-04", "title": "Con niebla." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-02",
+              "title": "¿Qué escucharon María y Max en los arbustos?",
+              "options": [
+                { "id": "opt-01", "title": "Un ladrido." },
+                { "id": "opt-02", "title": "Un canto." },
+                { "id": "opt-03", "title": "Un ruido." },
+                { "id": "opt-04", "title": "Una risa." }
+              ],
+              "correct_answer": "opt-03"
+            },
+            {
+              "id": "question-03",
+              "title": "¿Qué hicieron María y Max durante su paseo?",
+              "options": [
+                { "id": "opt-01", "title": "Caminaron por el sendero y saltaron charcos." },
+                { "id": "opt-02", "title": "Fueron a la tienda." },
+                { "id": "opt-03", "title": "Durmieron en el parque." },
+                { "id": "opt-04", "title": "Comieron en el parque." }
+              ],
+              "correct_answer": "opt-01"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "La aventura de Max",
+          "history": "Max, el perro de María, siempre estaba lleno de energía. Un día, decidió explorar el parque por su cuenta. Corrió detrás de mariposas, jugó con otros perros y encontró un nuevo amigo, un gatito llamado Felix. Al final del día, Max volvió con María, feliz pero cansado.",
+          "words": 48,
+          "questions": [
+            {
+              "id": "question-01",
+              "title": "¿Qué decidió hacer Max un día?",
+              "options": [
+                { "id": "opt-01", "title": "Dormir todo el día." },
+                { "id": "opt-02", "title": "Explorar el parque por su cuenta." },
+                { "id": "opt-03", "title": "Ir de compras." },
+                { "id": "opt-04", "title": "Nadar en el lago." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-02",
+              "title": "¿Con quién jugó Max en el parque?",
+              "options": [
+                { "id": "opt-01", "title": "Con otros perros." },
+                { "id": "opt-02", "title": "Con María." },
+                { "id": "opt-03", "title": "Con su nuevo amigo, Felix el gatito." },
+                { "id": "opt-04", "title": "Con pájaros." }
+              ],
+              "correct_answer": "opt-01"
+            },
+            {
+              "id": "question-03",
+              "title": "¿Cómo se sintió Max al final del día?",
+              "options": [
+                { "id": "opt-01", "title": "Enojado." },
+                { "id": "opt-02", "title": "Triste." },
+                { "id": "opt-03", "title": "Feliz pero cansado." },
+                { "id": "opt-04", "title": "Asustado." }
+              ],
+              "correct_answer": "opt-03"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "title": "Max y el misterioso ruido",
+          "history": "Max estaba jugando en el jardín cuando escuchó un ruido misterioso. Curioso, siguió el sonido hasta encontrar una caja. Al abrirla, descubrió que dentro había un pequeño robot que hacía ruidos divertidos. Max y el robot se hicieron amigos y pasaron la tarde jugando juntos.",
+          "words": 49,
+          "questions": [
+            {
+              "id": "question-01",
+              "title": "¿Qué escuchó Max mientras jugaba en el jardín?",
+              "options": [
+                { "id": "opt-01", "title": "Un ladrido." },
+                { "id": "opt-02", "title": "Un ruido misterioso." },
+                { "id": "opt-03", "title": "Un canto." },
+                { "id": "opt-04", "title": "Una risa." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-02",
+              "title": "¿Qué encontró Max dentro de la caja?",
+              "options": [
+                { "id": "opt-01", "title": "Un juguete." },
+                { "id": "opt-02", "title": "Un robot." },
+                { "id": "opt-03", "title": "Una pelota." },
+                { "id": "opt-04", "title": "Un libro." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-03",
+              "title": "¿Qué hicieron Max y el robot?",
+              "options": [
+                { "id": "opt-01", "title": "Se fueron a dormir." },
+                { "id": "opt-02", "title": "Pasaron la tarde jugando juntos." },
+                { "id": "opt-03", "title": "Comieron juntos." },
+                { "id": "opt-04", "title": "Vieron la televisión." }
+              ],
+              "correct_answer": "opt-02"
+            }
+          ]
+        }
+      ],
+      "nino": [
+        {
+          "id": "1",
+          "title": "Pedro y el dragón",
+          "history": "Pedro era un niño curioso que siempre soñaba con aventuras. Un día, mientras exploraba el bosque, encontró un dragón herido. Pedro decidió ayudar al dragón y lo cuidó hasta que se recuperó. En agradecimiento, el dragón lo llevó a volar por el cielo y le mostró lugares mágicos.",
+          "words": 50,
+          "questions": [
+            {
+              "id": "question-01",
+              "title": "¿Qué encontró Pedro en el bosque?",
+              "options": [
+                { "id": "opt-01", "title": "Un tesoro escondido." },
+                { "id": "opt-02", "title": "Un dragón herido." },
+                { "id": "opt-03", "title": "Un castillo encantado." },
+                { "id": "opt-04", "title": "Un grupo de animales." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-02",
+              "title": "¿Cómo ayudó Pedro al dragón?",
+              "options": [
+                { "id": "opt-01", "title": "Le construyó una casa." },
+                { "id": "opt-02", "title": "Lo cuidó hasta que se recuperó." },
+                { "id": "opt-03", "title": "Le dio de comer." },
+                { "id": "opt-04", "title": "Le enseñó a volar." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-03",
+              "title": "¿Qué hizo el dragón en agradecimiento?",
+              "options": [
+                { "id": "opt-01", "title": "Le regaló un tesoro." },
+                { "id": "opt-02", "title": "Lo llevó a volar por el cielo." },
+                { "id": "opt-03", "title": "Le enseñó magia." },
+                { "id": "opt-04", "title": "Le dio una espada mágica." }
+              ],
+              "correct_answer": "opt-02"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "La aventura submarina de Ana",
+          "history": "Ana siempre había soñado con explorar el océano. Un día, se subió a un submarino y comenzó su aventura. Vio peces de colores, corales brillantes y hasta una ciudad submarina. Ana estaba maravillada por la belleza del mundo bajo el agua.",
+          "words": 45,
+          "questions": [
+            {
+              "id": "question-01",
+              "title": "¿Qué medio de transporte usó Ana para su aventura?",
+              "options": [
+                { "id": "opt-01", "title": "Un barco." },
+                { "id": "opt-02", "title": "Un submarino." },
+                { "id": "opt-03", "title": "Un avión." },
+                { "id": "opt-04", "title": "Un coche." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-02",
+              "title": "¿Qué vio Ana en su aventura submarina?",
+              "options": [
+                { "id": "opt-01", "title": "Un volcán." },
+                { "id": "opt-02", "title": "Una ciudad submarina." },
+                { "id": "opt-03", "title": "Un desierto." },
+                { "id": "opt-04", "title": "Una montaña." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-03",
+              "title": "¿Qué sintió Ana al ver el mundo bajo el agua?",
+              "options": [
+                { "id": "opt-01", "title": "Tristeza." },
+                { "id": "opt-02", "title": "Miedo." },
+                { "id": "opt-03", "title": "Maravilla." },
+                { "id": "opt-04", "title": "Enojo." }
+              ],
+              "correct_answer": "opt-03"
+            }
+          ]
+        }
+      ],
+      "joven": [
+        {
+          "id": "1",
+          "title": "El misterio del reloj antiguo",
+          "history": "Sofía encontró un antiguo reloj en el ático de su abuela. El reloj tenía inscripciones misteriosas y parecía tener un mecanismo especial. Al investigar, Sofía descubrió que el reloj era una puerta a diferentes épocas. Decidió usarlo para viajar y resolver misterios históricos.",
+          "words": 50,
+          "questions": [
+            {
+              "id": "question-01",
+              "title": "¿Dónde encontró Sofía el reloj antiguo?",
+              "options": [
+                { "id": "opt-01", "title": "En la biblioteca." },
+                { "id": "opt-02", "title": "En el ático de su abuela." },
+                { "id": "opt-03", "title": "En una tienda de antigüedades." },
+                { "id": "opt-04", "title": "En el sótano de su casa." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-02",
+              "title": "¿Qué hacía el reloj antiguo?",
+              "options": [
+                { "id": "opt-01", "title": "Marcaba la hora exacta." },
+                { "id": "opt-02", "title": "Era una puerta a diferentes épocas." },
+                { "id": "opt-03", "title": "Tenía un mapa secreto." },
+                { "id": "opt-04", "title": "Daba buena suerte." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-03",
+              "title": "¿Para qué decidió usar Sofía el reloj?",
+              "options": [
+                { "id": "opt-01", "title": "Para venderlo." },
+                { "id": "opt-02", "title": "Para viajar y resolver misterios históricos." },
+                { "id": "opt-03", "title": "Para arreglarlo." },
+                { "id": "opt-04", "title": "Para decorar su habitación." }
+              ],
+              "correct_answer": "opt-02"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "El club de exploradores",
+          "history": "Un grupo de amigos decidió formar un club de exploradores. Cada fin de semana, se reunían para planear una nueva aventura. Exploraron bosques, montañas y cuevas, siempre en busca de nuevos desafíos y aprendizajes. Su amistad se fortalecía con cada aventura.",
+          "words": 46,
+          "questions": [
+            {
+              "id": "question-01",
+              "title": "¿Qué decidieron formar los amigos?",
+              "options": [
+                { "id": "opt-01", "title": "Un equipo de fútbol." },
+                { "id": "opt-02", "title": "Un club de exploradores." },
+                { "id": "opt-03", "title": "Un grupo de estudio." },
+                { "id": "opt-04", "title": "Una banda de música." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-02",
+              "title": "¿Qué exploraban los amigos cada fin de semana?",
+              "options": [
+                { "id": "opt-01", "title": "Ciudades." },
+                { "id": "opt-02", "title": "Bosques, montañas y cuevas." },
+                { "id": "opt-03", "title": "Museos." },
+                { "id": "opt-04", "title": "Restaurantes." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-03",
+              "title": "¿Qué se fortalecía con cada aventura?",
+              "options": [
+                { "id": "opt-01", "title": "Su resistencia física." },
+                { "id": "opt-02", "title": "Su amistad." },
+                { "id": "opt-03", "title": "Su conocimiento." },
+                { "id": "opt-04", "title": "Su habilidad para cocinar." }
+              ],
+              "correct_answer": "opt-02"
+            }
+          ]
+        }
+      ],
+      "adulto": [
+        {
+          "id": "1",
+          "title": "El viaje inesperado",
+          "history": "En una pequeña ciudad, vivía un hombre llamado Carlos que llevaba una vida rutinaria y monótona. Un día, recibió una carta misteriosa invitándolo a una aventura. Dudó al principio, pero finalmente decidió aceptar. La carta lo llevó a un tren que viajaba a lugares desconocidos. Durante el viaje, Carlos conoció a personas extraordinarias y enfrentó desafíos que jamás había imaginado. Cada experiencia lo transformó y le enseñó a apreciar la belleza de lo inesperado. Al final del viaje, Carlos regresó a su ciudad con una nueva perspectiva de la vida, listo para enfrentar cualquier cosa que viniera.",
+          "words": 69,
+          "questions": [
+            {
+              "id": "question-01",
+              "title": "¿Cómo era la vida de Carlos antes del viaje?",
+              "options": [
+                { "id": "opt-01", "title": "Aventurera y emocionante." },
+                { "id": "opt-02", "title": "Rutinaria y monótona." },
+                { "id": "opt-03", "title": "Llena de peligros." },
+                { "id": "opt-04", "title": "Muy agitada." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-02",
+              "title": "¿Qué recibió Carlos que lo invitaba a una aventura?",
+              "options": [
+                { "id": "opt-01", "title": "Un mapa del tesoro." },
+                { "id": "opt-02", "title": "Una carta misteriosa." },
+                { "id": "opt-03", "title": "Un billete de avión." },
+                { "id": "opt-04", "title": "Un mensaje de un amigo." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-03",
+              "title": "¿Qué aprendió Carlos durante su viaje?",
+              "options": [
+                { "id": "opt-01", "title": "A construir casas." },
+                { "id": "opt-02", "title": "A apreciar la belleza de lo inesperado." },
+                { "id": "opt-03", "title": "A hablar un nuevo idioma." },
+                { "id": "opt-04", "title": "A cocinar nuevos platos." }
+              ],
+              "correct_answer": "opt-02"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "La decisión de Ana",
+          "history": "Ana siempre había soñado con abrir su propio negocio, pero el miedo al fracaso la detenía. Un día, tras una conversación inspiradora con una amiga de la infancia, decidió arriesgarse. Invirtió sus ahorros en una pequeña tienda de artesanías. Al principio, los desafíos fueron abrumadores, pero con perseverancia y apoyo de su comunidad, la tienda comenzó a prosperar. Ana no solo cumplió su sueño, sino que también se convirtió en una fuente de inspiración para otros en su comunidad, demostrando que con valentía y trabajo duro, los sueños pueden hacerse realidad.",
+          "words": 70,
+          "questions": [
+            {
+              "id": "question-01",
+              "title": "¿Qué soñaba con hacer Ana?",
+              "options": [
+                { "id": "opt-01", "title": "Viajar por el mundo." },
+                { "id": "opt-02", "title": "Abrir su propio negocio." },
+                { "id": "opt-03", "title": "Escribir un libro." },
+                { "id": "opt-04", "title": "Ser cantante." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-02",
+              "title": "¿Qué la detenía de cumplir su sueño?",
+              "options": [
+                { "id": "opt-01", "title": "El miedo al fracaso." },
+                { "id": "opt-02", "title": "La falta de dinero." },
+                { "id": "opt-03", "title": "El apoyo de su familia." },
+                { "id": "opt-04", "title": "La falta de tiempo." }
+              ],
+              "correct_answer": "opt-01"
+            },
+            {
+              "id": "question-03",
+              "title": "¿Qué hizo Ana después de hablar con su amiga?",
+              "options": [
+                { "id": "opt-01", "title": "Decidió invertir en una tienda de artesanías." },
+                { "id": "opt-02", "title": "Se fue de viaje." },
+                { "id": "opt-03", "title": "Escribió un libro." },
+                { "id": "opt-04", "title": "Se convirtió en cantante." }
+              ],
+              "correct_answer": "opt-01"
+            }
+          ]
+        }
+      ],
+      "funcional": [
+        {
+          "id": "1",
+          "title": "El día de compras",
+          "history": "Laura tenía una lista de cosas que necesitaba comprar. Se levantó temprano y fue al mercado. Primero compró frutas y verduras frescas. Luego fue a la panadería a comprar pan. Al final, fue a la tienda de productos de limpieza. Terminó su día de compras y volvió a casa satisfecha.",
+          "words": 49,
+          "questions": [
+            {
+              "id": "question-01",
+              "title": "¿Qué compró Laura primero?",
+              "options": [
+                { "id": "opt-01", "title": "Pan." },
+                { "id": "opt-02", "title": "Frutas y verduras frescas." },
+                { "id": "opt-03", "title": "Productos de limpieza." },
+                { "id": "opt-04", "title": "Ropa." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-02",
+              "title": "¿Dónde compró Laura pan?",
+              "options": [
+                { "id": "opt-01", "title": "En la panadería." },
+                { "id": "opt-02", "title": "En el mercado." },
+                { "id": "opt-03", "title": "En la tienda de productos de limpieza." },
+                { "id": "opt-04", "title": "En la frutería." }
+              ],
+              "correct_answer": "opt-01"
+            },
+            {
+              "id": "question-03",
+              "title": "¿Cómo se sintió Laura al terminar su día de compras?",
+              "options": [
+                { "id": "opt-01", "title": "Triste." },
+                { "id": "opt-02", "title": "Cansada." },
+                { "id": "opt-03", "title": "Satisfecha." },
+                { "id": "opt-04", "title": "Enojada." }
+              ],
+              "correct_answer": "opt-03"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "La visita al médico",
+          "history": "Juan tenía una cita con el médico a las 10 de la mañana. Llegó a tiempo y se registró en la recepción. El médico lo llamó y le hizo un chequeo general. Después de revisar sus resultados, el médico le dio algunos consejos para mantenerse saludable. Juan se despidió y se fue a casa.",
+          "words": 48,
+          "questions": [
+            {
+              "id": "question-01",
+              "title": "¿A qué hora tenía la cita Juan?",
+              "options": [
+                { "id": "opt-01", "title": "A las 9 de la mañana." },
+                { "id": "opt-02", "title": "A las 10 de la mañana." },
+                { "id": "opt-03", "title": "A las 11 de la mañana." },
+                { "id": "opt-04", "title": "A las 8 de la mañana." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-02",
+              "title": "¿Qué hizo el médico durante la cita?",
+              "options": [
+                { "id": "opt-01", "title": "Le recetó medicamentos." },
+                { "id": "opt-02", "title": "Le hizo un chequeo general." },
+                { "id": "opt-03", "title": "Le vendió productos." },
+                { "id": "opt-04", "title": "Le tomó una radiografía." }
+              ],
+              "correct_answer": "opt-02"
+            },
+            {
+              "id": "question-03",
+              "title": "¿Qué hizo Juan después de la cita?",
+              "options": [
+                { "id": "opt-01", "title": "Fue al mercado." },
+                { "id": "opt-02", "title": "Se fue a casa." },
+                { "id": "opt-03", "title": "Visitó a un amigo." },
+                { "id": "opt-04", "title": "Compró frutas." }
+              ],
+              "correct_answer": "opt-02"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

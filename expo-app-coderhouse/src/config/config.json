@@ -1,0 +1,46 @@
+{
+    "tests": [
+      {
+        "id": 1,
+        "title": "Infante",
+        "subtitle": "Entre 4 y 6 años",
+        "image": "infantes.png",
+        "bg":"red",
+        "slug":"infante"
+      },
+      {
+        "id": 2,
+        "title": "Niño",
+        "subtitle": "Entre 7 y 13 años",
+        "image": "ninos.png",
+        "bg":"green",
+        "slug":"nino"
+      },
+      {
+        "id": 3,
+        "title": "Jóven",
+        "subtitle": "Entre 14 y 18 años",
+        "image": "jovenes.png",
+        "bg":"blue",
+        "slug":"joven"
+      }
+      ,
+      {
+        "id": 4,
+        "title": "Adulto",
+        "subtitle": "Entre 19 años y más",
+        "image": "adultos.png",
+        "bg":"orange",
+        "slug":"adulto"
+      },
+      {
+        "id": 4,
+        "title": "Funcional",
+        "subtitle": "Entre 19 años y más",
+        "image": "funcional.png",
+        "bg":"violet",
+        "slug":"funcional"
+      }
+    ]
+    
+  }
