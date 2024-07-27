@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import QuestionsBox from '@/components/QuestionsBox'
 import ButtonPrimary from '@/components/ButtonPrimary'
 import { SimpleLineIcons } from '@expo/vector-icons';
-import { setResultado } from '@/features/ResultadoSlice'
 
 
 const Preguntas = ({ navigation, route }) => {

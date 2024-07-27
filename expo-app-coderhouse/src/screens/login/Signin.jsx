@@ -8,6 +8,7 @@ import ButtonPrimary from '@/components/ButtonPrimary'
 import ButtonOutline from '@/components/ButtonOutline'
 import { signinSchema } from '@/validaciones/loginSchema'
 import { useSignInMutation } from '@/services/authService'
+import { insertSession } from '@/persistence'
 
 
 const Signin = ({ navigation }) => {
@@ -20,15 +21,24 @@ const Signin = ({ navigation }) => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        if (result.isSuccess) {
-            console.log('exito', result.data.email, result.data.idToken, result.data.localId)
-            dispatch(
-                setUser({
-                    email: result.data.email,
-                    idToken: result.data.idToken,
-                    localId: result.data.localId
-                })
-            )
+        if (result.isSuccess && result?.data) {
+            insertSession({
+                email: result.data.email,
+                localId: result.data.localId,
+                token: result.data.idToken
+
+            }).then((response) => {
+                console.log('response', response)
+                dispatch(
+                    setUser({
+                        email: result.data.email,
+                        idToken: result.data.idToken,
+                        localId: result.data.localId
+                    })
+                )
+
+            })
+
         } else if (result.isError) {
             console.log('Error de autenticación: ', result.error.data);
             setErrorAuth('Este usuario no existe')
@@ -38,12 +48,9 @@ const Signin = ({ navigation }) => {
 
 
     const handleSubmit = () => {
-
-
         try {
             setErrorEmail("")
             setErrorPassword("")
-
             signinSchema.validateSync({ email, password })
             triggerSignIn({ email, password, returnSecureToken: true })
 

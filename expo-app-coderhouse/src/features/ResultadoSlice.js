@@ -6,7 +6,7 @@ export const resultadoSlice = createSlice({
     value: {
       time: "",
       level: "",
-      ppm: 0,
+      wpm: 0,
       correct: 0,
       comprehension: 0,
     },
@@ -15,7 +15,7 @@ export const resultadoSlice = createSlice({
     setResultado: (state, { payload }) => {
       state.value.time = payload.time;
       state.value.level = payload.level;
-      state.value.ppm = payload.ppm;
+      state.value.wpm = payload.wpm;
       state.value.correct = payload.correct;
       state.value.comprehension = payload.comprehension;
     },
@@ -28,12 +28,11 @@ export const resultadoSlice = createSlice({
       state.value.correct += 1;
     },
     resetAll: (state) => {
-      state.time = 0;
-      state.time = 0;
-      state.level = "";
-      state.ppm = 0;
-      state.correct = 0;
-      state.comprehension = "";
+      state.value.time = "";
+      state.value.level = 0;
+      state.value.wpm = 0;
+      state.value.correct = 0;
+      state.value.comprehension = "";
     },
   },
 });

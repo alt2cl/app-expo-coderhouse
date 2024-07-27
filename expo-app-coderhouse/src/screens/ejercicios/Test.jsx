@@ -52,7 +52,7 @@ const Test = ({ navigation, route }) => {
             setResultado({
                 time: timeCounter,
                 level: currentLevel,
-                ppm: calculateWPM(timeCounter, nodoLevel.words),
+                wpm: calculateWPM(timeCounter, nodoLevel.words),
                 correct: 0,
                 comprehension: "",
             })
