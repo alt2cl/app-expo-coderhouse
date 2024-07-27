@@ -11,10 +11,9 @@ import { initSQLiteDB } from "@/persistence/index";
 (async () => {
   try {
     const response = await initSQLiteDB();
-    console.log({ responseCreatingDB: response });
-    console.log("Base de datos Inicilizado");
+    //console.log({ responseCreatingDB: response });
   } catch (error) {
-    console.log({ errorCreatingDB: error });
+    console.error({ errorCreatingDB: error });
   }
 })();
 

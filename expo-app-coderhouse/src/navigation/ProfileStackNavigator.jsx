@@ -20,7 +20,7 @@ export default function ProfileStackNavigator() {
 
         }}>
             <Stack.Screen name="Peril de usuario" component={Profile} options={{ headerShown: true }} />
-            <Stack.Screen name="Foto" component={Pic} />
+            <Stack.Screen name="Cambio de foto perfil" component={Pic} options={{ headerShown: true }} />
         </Stack.Navigator>
 
     )

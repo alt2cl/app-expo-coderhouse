@@ -1,5 +1,5 @@
 import { ScrollView, View } from 'react-native';
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useGetResultByIdQuery, usePostResultMutation } from '@/services/resultServices';
 import HeadSection from '@/components/HeadSection';
@@ -11,18 +11,12 @@ export default function Resultados({ navigation }) {
     const resultado = useSelector((state) => state.resultado.value);
     const { localId: UID } = useSelector((state) => state.auth.value);
     const dispatch = useDispatch();
-    const [isItemResultVisible, setIsItemResultVisible] = useState(!!resultado.time);
 
     const [postResult] = usePostResultMutation();
 
-    console.log('resultado inicial', resultado, UID);
-
-    const { data: historial, isLoading, isSuccess, refetch } = useGetResultByIdQuery(UID);
+    const { data: historial, isSuccess, refetch } = useGetResultByIdQuery(UID);
 
     const handleSubmitResultado = () => {
-        console.log('resultado', resultado);
-
-        setIsItemResultVisible(false);
 
         postResult({
             result: {

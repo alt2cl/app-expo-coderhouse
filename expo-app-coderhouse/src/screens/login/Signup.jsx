@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import InputForm from '@/components/InputForm'
 import Title from '@/components/Title'
@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux'
 import { setUser } from '@/features/AuthSlice'
 import { signupSchema } from '@/validaciones/loginSchema'
 
-const Signup = ({ navigation }) => {
+const Signup = () => {
 
     const [email, setEmail] = useState("")
     const [errorEmail, setErrorEmail] = useState("")
@@ -19,12 +19,9 @@ const Signup = ({ navigation }) => {
     const dispatch = useDispatch()
     const [triggerSignUp, result] = useSignUpMutation()
 
-    console.log('resultado', result.data)
 
     useEffect(() => {
-        console.log('resultadote:', result)
         if (result.isSuccess) {
-            console.log('exito', result.data.email, result.data.idToken, result.data.localId)
             dispatch(
                 setUser({
                     email: result.data.email,
@@ -46,9 +43,6 @@ const Signup = ({ navigation }) => {
             signupSchema.validateSync({ email, password, confirmPassword })
             triggerSignUp({ email, password, returnSecureToken: true })
         } catch (error) {
-            console.log('error signup')
-            console.log(error.path)
-            console.log(error.message)
 
             switch (error.path) {
                 case "email":

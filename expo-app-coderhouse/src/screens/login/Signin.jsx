@@ -28,7 +28,6 @@ const Signin = ({ navigation }) => {
                 token: result.data.idToken
 
             }).then((response) => {
-                console.log('response', response)
                 dispatch(
                     setUser({
                         email: result.data.email,
@@ -55,7 +54,6 @@ const Signin = ({ navigation }) => {
             triggerSignIn({ email, password, returnSecureToken: true })
 
         } catch (error) {
-            console.log('error: ', error.path)
             if (error.path == 'email') {
                 setErrorEmail(error.message)
             } else if (error.path == 'password') {

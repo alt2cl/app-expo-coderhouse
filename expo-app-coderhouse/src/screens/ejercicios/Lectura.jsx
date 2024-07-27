@@ -5,7 +5,7 @@ import ButtonPrimary from '@/components/ButtonPrimary'
 import { SimpleLineIcons } from '@expo/vector-icons';
 
 
-import data from './../../config/lecturas.json'
+import data from '@/config/lecturas.json'
 import ButtonOutline from '@/components/ButtonOutline'
 import { useState } from 'react'
 
@@ -17,14 +17,15 @@ const Lectura = ({ navigation, route }) => {
 
     const handleSelectedHistory = (title) => {
         setTitleHistory(title)
-
     }
+
+    const titlesection = 'TEST ' + route.params.currentLevel.toUpperCase()
 
     return (
         <View className="p-4">
-            <HeadSection title={`Test ${route.params.currentLevel}`} />
+            <HeadSection size="base" title={titlesection} />
             <View className="p-5 mb-5 bg-white rounded-lg shadow-lg shadow-slate-600 ">
-                <Title title="Elige tu desafio" center size="h4" />
+                <Title title="Elige un cuento" center size="h4" />
                 <FlatList
                     data={arraylist}
                     renderItem={({ item, index }) => {

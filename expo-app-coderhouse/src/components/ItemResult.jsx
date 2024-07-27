@@ -2,9 +2,8 @@ import { View, Text } from 'react-native'
 import React from 'react'
 
 const ItemResult = ({ item }) => {
-    console.log('er item:', item)
     return (
-        <View className="">
+        <View className="" key={item.id}>
             <View className="flex-row justify-between">
                 <View><Text className="font-bold text-slate-700">Tu resultado: </Text></View>
                 <View className="flex-row"><Text className="mb-1 text-slate-500 ">Categoría: </Text>

@@ -2,9 +2,8 @@ import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
 import React, { useState } from 'react'
 import * as ImagePicker from 'expo-image-picker';
 import { useDispatch, useSelector } from 'react-redux';
-import { setCameraImage } from '../features/User/UserSlice';
-import { useGetProfileimageQuery, usePostProfileImageMutation } from '../services/shopServices';
-import AddButton from '../components/AddButton';
+import { setCameraImage } from '@/features/AuthSlice';
+import { useGetProfileimageQuery, usePostProfileImageMutation } from '@/services/resultServices';
 import ButtonPrimary from '@/components/ButtonPrimary';
 const ImageSelector = ({ navigation }) => {
     const [image, setImage] = useState(null);
@@ -15,8 +14,6 @@ const ImageSelector = ({ navigation }) => {
     const [triggerPostImage, result] = usePostProfileImageMutation();
     const { localId } = useSelector((state) => state.auth.value);
     const { data: imageFromBase } = useGetProfileimageQuery(localId);
-    //console.log(localId)
-
 
     const pickLibraryImage = async () => {
         try {
@@ -31,15 +28,13 @@ const ImageSelector = ({ navigation }) => {
                     quality: 0.2,
                 })
 
-                console.log(result);
-
                 if (!result.canceled) {
                     const image = `data:image/jpeg;base64,${result.assets[0].base64}`
                     setImage(image)
                 }
             }
         } catch (error) {
-            console.log(error)
+            console.error(error)
         }
     }
 
@@ -91,31 +86,39 @@ const ImageSelector = ({ navigation }) => {
     };
 
     return (
-        <View className="flex-1 justify-center">
+        <View className="flex-1  p-5">
             {image || imageFromBase ? (
                 <>
-                    <Image
-                        style={styles.img}
-                        resizeMode="cover"
-                        source={{ uri: image || imageFromBase?.image }}
-                    />
-                    <ButtonPrimary title="Take another photo" action={pickImage} />
+                    <View className="my-4">
+                        <Image
+                            style={styles.img}
+                            resizeMode="cover"
+                            source={{ uri: image || imageFromBase?.image }}
+                        />
+
+                    </View>
+
+                    <ButtonPrimary title="Confirmar foto" action={confirmImage} className="mb-5" />
+
+
+                    <ButtonPrimary title="Tomar otra foto" action={pickImage} className="mb-5" />
 
                     <ButtonPrimary
-                        title="Pick photo from gallery"
+                        title="Obtener foto de la galería"
                         action={pickLibraryImage}
+                        className="mb-5"
                     />
 
-                    <ButtonPrimary title="Confirm photo" action={confirmImage} />
+
                 </>
             ) : (
                 <>
                     <View style={styles.containerPhoto}>
                         <Text>No photo to show...</Text>
                     </View>
-                    <AddButton title="Take a photo" action={pickImage} />
+                    <ButtonPrimary title="Tomar foto" action={pickImage} className="mb-5" />
                     <ButtonPrimary
-                        title="Pick photo from gallery"
+                        title="Obtener foto de la galería"
                         action={pickLibraryImage}
                     />
 
@@ -131,10 +134,10 @@ const styles = StyleSheet.create({
 
 
     img: {
-        marginVertical: 20,
         height: 200,
         width: 200,
-        borderRadius: 100
+        borderRadius: 100,
+        margin: 'auto'
     },
     containerPhoto: {
         marginVertical: 20,
@@ -143,6 +146,7 @@ const styles = StyleSheet.create({
         borderRadius: 100,
         borderWidth: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginHorizontal: 'auto'
     }
 })

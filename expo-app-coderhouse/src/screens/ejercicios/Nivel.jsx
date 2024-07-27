@@ -6,7 +6,7 @@ const Nivel = ({ navigation, route }) => {
     return (
         <ScrollView>
             <View style={styles.container}>
-                <Text className="mb-7 text-lg text-slate-600 font-medium">Escoge tu nivel de lectura</Text>
+                <Text className="mb-14 text-lg text-slate-600 text-center font-medium px-4 mt-5">Pon a prueba tus habilidades de lectura, escoge una categoría y comencemos!</Text>
                 <ListNivelItem data={test} navigation={navigation} />
             </View>
 

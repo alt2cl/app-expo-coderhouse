@@ -1,5 +1,5 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import data from './../../config/lecturas.json'
 import Title from '@/components/Title'
 import Counter from '@/components/Counter'
@@ -21,15 +21,6 @@ const Test = ({ navigation, route }) => {
     const nodoLevel = thisLevel.find(item => item.title == titleHistory)
     const dispatch = useDispatch()
 
-    useEffect(() => {
-        console.log('nodoLevel: ', nodoLevel.words)
-
-        console.log(calculateWPM(timeCounter, nodoLevel.words))
-
-
-
-
-    }, [timeCounter])
 
     const calculateWPM = (time, wordCount) => {
         const [hours, minutes, seconds, centiseconds] = time.split(':').map(Number);
@@ -69,7 +60,6 @@ const Test = ({ navigation, route }) => {
     }
 
     const handleTime = (finalTime) => {
-        console.log('final time >>', finalTime)
         setTimeCounter(finalTime)
     }
 
@@ -77,7 +67,7 @@ const Test = ({ navigation, route }) => {
         <ScrollView>
             <Counter stop={stop} onStop={handleTime} />
             <View className="p-5 ">
-                <View className="py-4 px-7 pb-10 bg-white mb-5 rounded-lg shadow-lg shadow-slate-600">
+                <View className="py-4 px-7 pb-10 bg-white mb-7 mt-2 rounded-lg shadow-lg shadow-slate-600">
                     <Title title={nodoLevel.title} size="h2" />
                     <Text className="text-base text-slate-800" > {nodoLevel.history}</Text>
                 </View>

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
+import { StyleSheet, View, Image } from 'react-native'
 
 import { useDispatch, useSelector } from "react-redux";
 import { useGetProfileimageQuery } from '@/services/resultServices'
@@ -13,7 +13,7 @@ const MyProfile = ({ navigation }) => {
     const { imageCamera, localId } = useSelector((state) => state.auth.value)
     const { data: imageFromBase } = useGetProfileimageQuery(localId)
     const launchCamera = async () => {
-        navigation.navigate("Image Selector");
+        navigation.navigate("Cambio de foto perfil");
     };
 
     const launchLocation = async () => {
@@ -28,10 +28,10 @@ const MyProfile = ({ navigation }) => {
     const signOut = async () => {
         try {
             const response = await truncateSessionTable()
-            console.log(response)
             dispatch(clearUser())
+            navigation.navigate('Nivel')
         } catch (error) {
-            console.log({ errorSignOutDB: error })
+            console.error({ errorSignOutDB: error })
         }
     }
 

@@ -36,7 +36,6 @@ const Counter = ({ stop, onStop }) => {
         } else {
             // Llama a onStop con el tiempo formateado
             if (onStop) {
-                console.log('el onstop')
                 onStop(`${formatNumber(hrs)}:${formatNumber(min)}:${formatNumber(seg)}:${formatNumber(cen)}`);
             }
         }
